@@ -3,7 +3,7 @@ import { Lightbulb, Wind, Activity, Droplets, Printer, Gauge } from "lucide-reac
 const projects = [
   {
     title: "Smart Light with Presence Sensor",
-    description: "Intelligent lighting system that automatically adjusts based on occupancy and ambient conditions",
+    description: "Intelligent lighting system that automatically adjusts based on occupancy",
     icon: Lightbulb,
     tags: ["IoT", "Sensors", "Energy Efficiency"],
     color: "primary"
