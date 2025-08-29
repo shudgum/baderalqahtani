@@ -95,11 +95,6 @@ export function Services() {
                 ))}
               </div>
 
-              {/* CTA */}
-              <button className={`flex items-center space-x-2 text-${service.color} font-medium group-hover:space-x-3 transition-all duration-300`}>
-                <span>Learn More</span>
-                <ArrowRight className="h-4 w-4" />
-              </button>
 
               {/* Hover Effect Overlay */}
               <div className="absolute top-0 left-0 right-0 bottom-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">

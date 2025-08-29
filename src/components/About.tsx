@@ -28,6 +28,29 @@ export function About() {
               of technology to drive sustainable change and create lasting positive impact.
             </p>
 
+            {/* Values & Interests */}
+            <div className="mt-8 p-6 glass rounded-xl border border-glass-border">
+              <h3 className="text-xl font-bold mb-4 text-secondary">Values & Interests</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  <span className="text-sm text-muted-foreground">Environmental Sustainability</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                  <span className="text-sm text-muted-foreground">Digital Transformation</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full bg-accent"></div>
+                  <span className="text-sm text-muted-foreground">Innovation & Research</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 rounded-full bg-success"></div>
+                  <span className="text-sm text-muted-foreground">3D Printing & Design</span>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-wrap gap-4 pt-4">
               <span className="px-4 py-2 rounded-full bg-primary/10 text-primary">IoT Systems</span>
               <span className="px-4 py-2 rounded-full bg-secondary/10 text-secondary">AI Innovation</span>

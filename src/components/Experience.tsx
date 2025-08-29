@@ -89,7 +89,7 @@ export function Experience() {
                     {/* Projects */}
                     {exp.projects && (
                       <div className="space-y-4 mb-6">
-                        <h4 className="text-lg font-semibold text-secondary">Key Aramco Projects:</h4>
+                        <h4 className="text-lg font-semibold text-secondary">Research and Development Methodology:</h4>
                         {exp.projects.map((project, pIndex) => (
                           <div key={pIndex} className="flex items-start space-x-4 p-4 rounded-xl bg-muted/30 hover:bg-muted/50 transition-colors duration-300">
                             <div className="p-2 rounded-lg bg-secondary/10">

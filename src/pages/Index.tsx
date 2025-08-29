@@ -23,14 +23,6 @@ const Index = () => {
         <Contact />
       </main>
       
-      {/* Footer */}
-      <footer className="py-8 px-6 border-t border-glass-border bg-muted/20">
-        <div className="container mx-auto text-center">
-          <p className="text-muted-foreground">
-            © 2024 Your Portfolio. Built with passion for sustainable innovation and Vision 2030.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };
