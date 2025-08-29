@@ -22,7 +22,7 @@ const experiences = [
       },
       {
         title: "Red Sea Seaweed Research",
-        description: "Researched and developed solutions for Red Sea seaweed growth & production optimization",
+        description: "Managed a research and development of solutions for Red Sea seaweed growth & production optimization",
         icon: Waves,
         highlight: "Marine Innovation"
       }
