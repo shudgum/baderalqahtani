@@ -16,7 +16,7 @@ const experiences = [
       },
       {
         title: "Climatree Development",
-        description: "Developed a solar-powered artificial tree that purifies air and can be monitored remotely",
+        description: "Developed a solar-powered artificial tree that was meant to raise awareness for environmental issues that purifies air and can be monitored remotely",
         icon: Zap,
         highlight: "Solar Innovation"
       },
