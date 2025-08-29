@@ -30,7 +30,7 @@ const experiences = [
   },
   {
     role: "Business Developer",
-    company: "PetroART",
+    company: "Green Groves Environmental Services",
     period: "Previous Employment",
     type: "development",
     icon: Briefcase,
