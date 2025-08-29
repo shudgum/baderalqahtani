@@ -10,7 +10,7 @@ const experiences = [
     projects: [
       {
         title: "Algae Research Test-bed Facility",
-        description: "Built the first algae research test-bed facility in the Middle East for bio-fuel & bio-char research",
+        description: "Built the first algae research test-bed facility in the Middle East for algae growth studies, bio-fuel & bio-char research",
         icon: TreePine,
         highlight: "First in Middle East"
       },
