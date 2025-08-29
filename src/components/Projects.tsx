@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Vibration Monitoring Sensor",
-    description: "Industrial vibration detection system for predictive maintenance and equipment health monitoring",
+    description: "Vibration detection alarm system for real-time alerts and safety monitoring",
     icon: Activity,
     tags: ["Industrial IoT", "Predictive Analytics", "Sensors"],
     color: "accent"
