@@ -4,7 +4,7 @@ const experiences = [
   {
     role: "General Manager",
     company: "PetroART",
-    period: "Present",
+    period: "Last Employment",
     type: "leadership",
     icon: Building2,
     projects: [
