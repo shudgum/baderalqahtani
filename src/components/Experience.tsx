@@ -31,7 +31,7 @@ const experiences = [
   {
     role: "Business Developer",
     company: "Green Groves Environmental Services",
-    period: "Last Employment",
+    period: "Previous Employment",
     type: "development",
     icon: Briefcase,
     achievements: [
