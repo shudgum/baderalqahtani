@@ -3,7 +3,7 @@ import { Building2, Briefcase, TreePine, Zap, Waves } from "lucide-react"
 const experiences = [
   {
     role: "General Manager",
-    company: "PetroART",
+    company: "Green Groves Environmental Services",
     period: "Last Employment",
     type: "leadership",
     icon: Building2,
@@ -30,7 +30,7 @@ const experiences = [
   },
   {
     role: "Business Developer",
-    company: "Green Groves Environmental Services",
+    company: "PetroART",
     period: "Previous Employment",
     type: "development",
     icon: Briefcase,
