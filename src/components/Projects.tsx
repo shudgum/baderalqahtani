@@ -60,26 +60,20 @@ export function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="group animate-slide-up-fade" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="glass glass-hover rounded-2xl p-6 border border-glass-border hover-lift hover-flip transition-all duration-500 h-full relative overflow-hidden">
-                {/* Animated background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
-                {/* Glowing border effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500"></div>
-                
+            <div key={index} className="group">
+              <div className="glass rounded-2xl p-6 border border-primary/10 hover:scale-105 transition-all duration-200 h-full">
                 <div className="relative z-10">
                   {/* Icon */}
-                  <div className="p-4 rounded-2xl bg-primary/10 mb-6 w-fit group-hover:bg-primary/20 group-hover:animate-glow-pulse transition-all duration-300">
-                    <project.icon className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                  <div className="p-4 rounded-2xl bg-primary/10 mb-6 w-fit group-hover:bg-primary/20 transition-colors duration-200">
+                    <project.icon className="h-8 w-8 text-primary" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-3">
                     {project.title}
                   </h3>
                   
-                  <p className="text-muted-foreground mb-6 leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -88,28 +82,12 @@ export function Projects() {
                     {project.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex} 
-                        className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300 cursor-default"
-                        style={{ animationDelay: `${tagIndex * 0.1}s` }}
+                        className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                </div>
-                
-                {/* Particle effect on hover */}
-                <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  {[...Array(3)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="absolute w-1 h-1 bg-primary rounded-full animate-particle-rise"
-                      style={{
-                        left: `${20 + i * 30}%`,
-                        animationDelay: `${i * 0.3}s`,
-                        animationDuration: '2s'
-                      }}
-                    ></div>
-                  ))}
                 </div>
               </div>
             </div>
