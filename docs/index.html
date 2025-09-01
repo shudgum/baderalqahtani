@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bader Alqahtnai - IoT & AI Innovation for Vision 2030</title>
+    <meta name="description" content="Bridging IoT, AI, and Green Innovation for Vision 2030. Master's in IoT & Embedded Systems, leading environmental technology projects and sustainable solutions.">
+    <meta name="author" content="Bader Alqahtnai">
+    <meta name="keywords" content="IoT, AI, Vision 2030, Green Technology, Sustainable Innovation, Saudi Arabia, Environmental Solutions, Business Intelligence">
+    
+    <meta property="og:title" content="Bader Alqahtnai - IoT & AI Innovation Portfolio">
+    <meta property="og:description" content="Bridging IoT, AI, and Green Innovation for Vision 2030. Explore my journey in sustainable technology and environmental solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/hero-preview.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bader Alqahtnai - IoT & AI Innovation Portfolio">
+    <meta name="twitter:description" content="Bridging IoT, AI, and Green Innovation for Vision 2030">
+    <meta name="twitter:image" content="/hero-preview.jpg">
+    
+    <link rel="canonical" href="https://baderalqahtnai.github.io">
+    
+    <style>
+        :root {
+            --primary: hsl(160, 60%, 45%);
+            --primary-light: hsl(160, 60%, 75%);
+            --secondary: hsl(200, 70%, 50%);
+            --secondary-light: hsl(200, 70%, 75%);
+            --accent: hsl(180, 100%, 50%);
+            --background: hsl(0, 0%, 100%);
+            --foreground: hsl(210, 15%, 15%);
+            --muted: hsl(210, 15%, 96%);
+            --muted-foreground: hsl(210, 10%, 40%);
+            --border: hsl(210, 15%, 90%);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: hsl(160, 50%, 55%);
+                --primary-light: hsl(160, 50%, 70%);
+                --secondary: hsl(200, 60%, 65%);
+                --secondary-light: hsl(200, 60%, 80%);
+                --accent: hsl(180, 100%, 60%);
+                --background: hsl(210, 15%, 8%);
+                --foreground: hsl(0, 0%, 95%);
+                --muted: hsl(210, 15%, 15%);
+                --muted-foreground: hsl(210, 10%, 60%);
+                --border: hsl(210, 15%, 20%);
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--foreground);
+            background-color: var(--background);
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-alt {
+            background-color: var(--muted);
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            header {
+                background: rgba(21, 21, 21, 0.95);
+            }
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--muted-foreground);
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--foreground);
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--background) 0%, var(--muted) 100%);
+            position: relative;
+        }
+        
+        .hero-content h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--muted-foreground);
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            padding: 2rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--muted-foreground);
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .card {
+            padding: 2rem;
+            border-radius: 1rem;
+            background: var(--background);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .icon-primary {
+            background: rgba(64, 173, 132, 0.1);
+            color: var(--primary);
+        }
+        
+        .icon-secondary {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--secondary);
+        }
+        
+        .icon-accent {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent);
+        }
+        
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .card p {
+            color: var(--muted-foreground);
+            line-height: 1.7;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+        
+        .tag-primary {
+            background: rgba(64, 173, 132, 0.1);
+            color: var(--primary);
+        }
+        
+        .tag-secondary {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--secondary);
+        }
+        
+        .tag-accent {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent);
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--border);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background: rgba(64, 173, 132, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background: rgba(64, 173, 132, 0.1);
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Bader Alqahtnai</h1>
+                    <p>Bridging IoT, AI, and Green Innovation for Vision 2030</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Explore My Work →</a>
+                        <a href="#" class="btn btn-outline">Download CV ↓</a>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-card">
+                            <span class="stat-number">R&D</span>
+                            <span class="stat-label">Research & Development</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">MSc</span>
+                            <span class="stat-label">IoT & Embedded Systems</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">Vision 2030</span>
+                            <span class="stat-label">Green Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="section">
+            <div class="container">
+                <h2>Mission & Vision</h2>
+                <p class="section-subtitle">Driving sustainable innovation through technology for a better tomorrow</p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="card-icon icon-primary">🎯</div>
+                        <h3>Mission</h3>
+                        <p>To create added-value in the market by enabling local talent and creating new solutions tailored for local needs. Empowering communities through innovative technology that addresses real-world challenges while fostering sustainable growth.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-primary">Local Talent</span>
+                            <span class="tag tag-primary">Innovation</span>
+                            <span class="tag tag-primary">Market Value</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon icon-secondary">👁️</div>
+                        <h3>Vision</h3>
+                        <p>To be a leader in the IoT / AI industry with research and applicable solutions tailored to Kingdom Vision 2030, especially in renewable and green solutions. Pioneering sustainable technology that transforms how we interact with our environment.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-secondary">IoT Leadership</span>
+                            <span class="tag tag-secondary">Vision 2030</span>
+                            <span class="tag tag-secondary">Green Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <h2>About Me</h2>
+                <p class="section-subtitle">Passionate about bridging technology and sustainability for meaningful impact</p>
+                
+                <div class="grid grid-2">
+                    <div>
+                        <p style="margin-bottom: 1.5rem;">I am currently pursuing a Master's degree in IoT & Embedded Systems at King Fahd University of Petroleum & Minerals (KFUPM), building upon my Bachelor's degree in Information Technology from Saudi Electronic University.</p>
+                        
+                        <p style="margin-bottom: 2rem;">My journey combines technical expertise with environmental consciousness, focusing on creating innovative solutions that align with Saudi Arabia's Vision 2030 goals. I believe in the power of technology to drive sustainable change and create lasting positive impact.</p>
+                        
+                        <div class="card">
+                            <h3>Values & Interests</h3>
+                            <div style="margin-top: 1rem;">
+                                <span class="tag tag-primary">Environmental Sustainability</span>
+                                <span class="tag tag-secondary">Digital Transformation</span>
+                                <span class="tag tag-accent">Innovation & Research</span>
+                                <span class="tag tag-primary">3D Printing & Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-icon icon-primary">🎓</div>
+                            <h3>Master's in IoT & Embedded Systems</h3>
+                            <p style="margin: 0.5rem 0;"><strong>📍 King Fahd University of Petroleum & Minerals</strong></p>
+                            <p style="margin: 0.5rem 0;">📅 Current</p>
+                            <p>Advanced studies in IoT architecture, embedded systems design, and AI integration for sustainable technology solutions.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-icon icon-secondary">🎓</div>
+                            <h3>Bachelor's in Information Technology</h3>
+                            <p style="margin: 0.5rem 0;"><strong>📍 Saudi Electronic University</strong></p>
+                            <p style="margin: 0.5rem 0;">📅 Completed</p>
+                            <p>Comprehensive foundation in information systems, software development, and digital technology applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Experience</h2>
+                <p class="section-subtitle">Leading environmental innovation through strategic management and pioneering research</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-icon icon-primary">🌱</div>
+                            <h3>General Manager - EcoGen</h3>
+                            <p><strong>Environmental Technology Solutions | 2020 - Present</strong></p>
+                            <p>Leading comprehensive environmental technology initiatives focused on sustainable innovation and IoT integration. Developed and implemented strategic business plans that align with Vision 2030 sustainability goals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-icon icon-secondary">💼</div>
+                            <h3>Business Development Manager - Al Safir</h3>
+                            <p><strong>Strategic Business Growth | 2019 - 2020</strong></p>
+                            <p>Expanded business networks across environmental technology sector. Secured strategic partnerships with key industry players and conducted comprehensive market analysis for sustainable solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2>Personal Projects</h2>
+                <p class="section-subtitle">Hands-on innovation through practical IoT solutions and sustainable technology development</p>
+                
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-icon icon-primary">💚</div>
+                        <h3>Environmental Monitoring System</h3>
+                        <p>Comprehensive IoT solution for real-time environmental data collection and analysis, supporting sustainability initiatives and regulatory compliance.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-primary">IoT Sensors</span>
+                            <span class="tag tag-primary">Data Analytics</span>
+                            <span class="tag tag-primary">Environmental Tech</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon icon-secondary">🤖</div>
+                        <h3>Smart Energy Management</h3>
+                        <p>AI-powered energy optimization system designed to reduce consumption and improve efficiency in residential and commercial settings.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-secondary">AI/ML</span>
+                            <span class="tag tag-secondary">Energy Optimization</span>
+                            <span class="tag tag-secondary">Smart Grid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon icon-accent">⚙️</div>
+                        <h3>Custom IoT Solutions</h3>
+                        <p>Tailored IoT systems for specific environmental and industrial monitoring applications.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-accent">Custom Development</span>
+                            <span class="tag tag-accent">IoT Architecture</span>
+                            <span class="tag tag-accent">System Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills & Expertise</h2>
+                <p class="section-subtitle">Combining technical proficiency with strategic business acumen for comprehensive solution delivery</p>
+                
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-icon icon-primary">📊</div>
+                        <h3>Business Intelligence</h3>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-primary">Data Analytics</span>
+                            <span class="tag tag-primary">Market Research</span>
+                            <span class="tag tag-primary">Strategic Planning</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon icon-secondary">🚀</div>
+                        <h3>Business Development</h3>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-secondary">Partnership Management</span>
+                            <span class="tag tag-secondary">Negotiation</span>
+                            <span class="tag tag-secondary">Growth Strategy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon icon-accent">🔧</div>
+                        <h3>Technical Skills</h3>
+                        <div style="margin-top: 1rem;">
+                            <span class="tag tag-accent">Python</span>
+                            <span class="tag tag-accent">IoT Development</span>
+                            <span class="tag tag-accent">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section section-alt">
+            <div class="container">
+                <h2>Services</h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to drive your business forward through technology and innovation</p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="card-icon icon-primary">📈</div>
+                        <h3>Business Intelligence & Analytics</h3>
+                        <p>Transform your data into actionable insights with comprehensive BI solutions tailored for environmental and technology sectors.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1rem;">
+                            <li>Data Analysis & Visualization</li>
+                            <li>Market Research & Insights</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon icon-secondary">🛠️</div>
+                        <h3>IoT Solutions & Development</h3>
+                        <p>Custom IoT systems designed to meet your specific environmental monitoring and automation needs.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1rem;">
+                            <li>IoT System Design</li>
+                            <li>Sensor Integration</li>
+                            <li>Data Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p class="section-subtitle">Ready to collaborate on your next innovative project? Let's discuss how we can create sustainable solutions together.</p>
+                
+                <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <div class="contact-info">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Saudi Arabia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🐙</a>
+                        <a href="#" class="social-link">📄</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    header.style.background = 'rgba(21, 21, 21, 0.95)';
+                }
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    header.style.background = 'rgba(21, 21, 21, 0.95)';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
